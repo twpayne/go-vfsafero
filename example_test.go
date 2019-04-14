@@ -9,9 +9,7 @@ import (
 )
 
 func ExampleNewAferoFS() {
-
 	Test := func(t *testing.T) {
-
 		fs, cleanup, err := vfst.NewTestFS(map[string]interface{}{
 			"/home/user/.bashrc": "# contents of .bashrc\n",
 		})
@@ -28,7 +26,6 @@ func ExampleNewAferoFS() {
 				vfst.TestContentsString("bar"),
 			),
 		)
-
 	}
 
 	Test(&testing.T{})

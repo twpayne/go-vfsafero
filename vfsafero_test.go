@@ -7,9 +7,7 @@ import (
 	"github.com/twpayne/go-vfs/vfst"
 )
 
-var (
-	_ afero.Fs = &AferoFS{}
-)
+var _ afero.Fs = &AferoFS{}
 
 func TestAferoFS(t *testing.T) {
 	fs, cleanup, err := vfst.NewTestFS(map[string]interface{}{
