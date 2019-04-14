@@ -1,4 +1,4 @@
-# `go-vfsafero`
+# go-vfsafero
 
 [![GoDoc](https://godoc.org/github.com/twpayne/go-vfsafero?status.svg)](https://godoc.org/github.com/twpayne/go-vfsafero)
 [![Build Status](https://travis-ci.org/twpayne/go-vfsafero.svg?branch=master)](https://travis-ci.org/twpayne/go-vfsafero)
@@ -9,31 +9,10 @@ Package `vfsafero` provides a compatibility later between
 [`github.com/spf13/afero`](https://github.com/spf13/afero).
 
 This allows you to use `vfst` to test exisiting code that uses
-[`afero.Fs`](https://godoc.org/github.com/spf13/afero#Fs). See [the
-documentation](https://godoc.org/github.com/twpayne/go-vfsafero) for an
-example.
-
+[`afero.Fs`](https://godoc.org/github.com/spf13/afero#Fs), and use `vfs.FS`s as
+`afero.Fs`s. See [the
+documentation](https://godoc.org/github.com/twpayne/go-vfsafero) for an example.
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2018 Tom Payne
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT
