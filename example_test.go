@@ -19,7 +19,7 @@ func ExampleNewAferoFS() {
 		defer cleanup()
 
 		aferoFS := vfsafero.NewAferoFS(fs)
-		afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666)
+		_ = afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666)
 
 		vfst.RunTests(t, fs, "",
 			vfst.TestPath("/home/user/foo",
