@@ -1,4 +1,4 @@
-module github.com/twpayne/go-vfsafero
+module github.com/twpayne/go-vfsafero/v2
 
 go 1.16
 
