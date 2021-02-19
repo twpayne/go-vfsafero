@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/spf13/afero"
-	"github.com/twpayne/go-vfs/vfst"
-	vfsafero "github.com/twpayne/go-vfsafero"
+	"github.com/twpayne/go-vfs/v2/vfst"
+	vfsafero "github.com/twpayne/go-vfsafero/v2"
 )
 
 func ExampleNewAferoFS() {
@@ -19,7 +19,7 @@ func ExampleNewAferoFS() {
 		defer cleanup()
 
 		aferoFS := vfsafero.NewAferoFS(fs)
-		afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666)
+		_ = afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666)
 
 		vfst.RunTests(t, fs, "",
 			vfst.TestPath("/home/user/foo",
