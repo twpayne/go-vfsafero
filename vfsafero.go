@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/spf13/afero"
-	vfs "github.com/twpayne/go-vfs"
+	vfs "github.com/twpayne/go-vfs/v2"
 )
 
 // An AferoFS implements github.com/spf13/afero.Fs.

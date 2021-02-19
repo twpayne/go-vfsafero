@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/spf13/afero"
-	"github.com/twpayne/go-vfs/vfst"
+	"github.com/twpayne/go-vfs/v2/vfst"
 	vfsafero "github.com/twpayne/go-vfsafero"
 )
 
