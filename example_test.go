@@ -4,8 +4,9 @@ import (
 	"testing"
 
 	"github.com/spf13/afero"
-	"github.com/twpayne/go-vfs/v2/vfst"
-	vfsafero "github.com/twpayne/go-vfsafero/v2"
+	"github.com/twpayne/go-vfs/v4/vfst"
+
+	vfsafero "github.com/twpayne/go-vfsafero/v4"
 )
 
 func ExampleNewAferoFS() {
