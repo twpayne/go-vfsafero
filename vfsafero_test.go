@@ -19,7 +19,9 @@ func TestAferoFS(t *testing.T) {
 	defer cleanup()
 
 	aferoFS := NewAferoFS(fs)
-	afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666)
+	if err := afero.WriteFile(aferoFS, "/home/user/foo", []byte("bar"), 0666); err != nil {
+		t.Fatal(err)
+	}
 
 	vfst.RunTests(t, fs, "",
 		vfst.TestPath("/home/user/foo",
