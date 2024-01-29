@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/spf13/afero"
-	"github.com/twpayne/go-vfs/v2/vfst"
+	"github.com/twpayne/go-vfs/v4/vfst"
 )
 
 var _ afero.Fs = &AferoFS{}
